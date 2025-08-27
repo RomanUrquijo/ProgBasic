@@ -1,4 +1,113 @@
- h1,h2{
-            color: red;}
-             h3,h4{
-            color: blueviolet;}
+/* ####### Estilo para etiquetas semanticas ####### */
+body {
+    font-family: arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #8a0e0e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ####### Estilo para menú de navegación ####### */
+.menu_nav {
+    background-color: #4b0303;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu_nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu_nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(238, 255, 83);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    min-width: 200px;
+}
+
+.menu_item:hover .submenu {
+    display: block;
+}
+
+.submenu li  {
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+/* ####### Estilo para la tabla ####### */
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #e3e3e3;
+}
+
+/* ####### Estilo para footer ####### */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
