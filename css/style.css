@@ -55,7 +55,7 @@ header {
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: #333;
+    background-color: #410303;
     min-width: 200px;
 }
 
@@ -95,6 +95,9 @@ th, td {
 
 thead {
     background-color: #e3e3e3;
+}
+.alinear_texto{
+    text-align: left;
 }
 
 /* ####### Estilo para footer ####### */

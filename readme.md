@@ -1,14 +1,30 @@
-# 🎞 Proyecto web del bootcam de Programacion basica
+# 🚀 Proyecto Web del Bootcamp de Prog. Básica
 
-este es un prooyecto que utiliza tecnologias como **HTML**, **CSS** Y **JavaScript** para demostrar como
-estructurar y crear una aplicacion web con un despliegue usando **GitHub Pages**
+Este es un proyecto que utiliza tecnologías como **HTML**, **CSS** y **Javascript** para mostrar como estructurar y crear una aplicación Web con un despliegue usando **GitHub Pages**
 
-## 🐱‍👤tecnologias usadas
---**HTML** => estructuras de la pagina.
---**CSS** => estilo y diseño de la pagina
---**JavaScript** => interactividad y funcionalidad de la pagina.
+## 📁 Estructura del Proyecto
 
+```plaintext
+/
+├── index.html                # Página principal
+├── readme.md                 # Información del proyecto
+├── html/
+│   ├── miprimerapágina.html  # 
+│   ├── .html                 # 
+│   └── .html                 # 
+├── css/
+│   └── style.css             # Hoja de estilos externa común a todas las páginas
+│   └── .css                  # Script para aprender estilos de css
+└── js/
+    ├── function.js           # Script que contiene lógica de javascript
+    └── .js                   # Script para aprender js
+```
 
----
+## 🛠️ Tecnologías Utilizadas
 
-## 📁estructura de la pagina.
+| Tecnología              | Logo                                                                 | Descripción                                                                                   |
+|------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **HTML5**              | ![HTML5](https://img.icons8.com/color/48/html-5--v1.png)              | Lenguaje de marcado usado para estructurar las páginas web.                                  |
+| **CSS3**               | ![CSS3](https://img.icons8.com/color/48/css3.png)                     | Hojas de estilo para personalizar la apariencia de la web.                                   |
+| **JavaScript**| ![JS](https://img.icons8.com/color/48/javascript--v1.png)             | Se utilizará más adelante para validaciones y lógica interactiva.                            |
+| **SweetAlert2**        |  | Librería JS para mostrar alertas modernas, elegantes y personalizadas. |
