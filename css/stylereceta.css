@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo y cuerpo */
+body {
+    background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Sección principal */
+section {
+    background-color: #ffffffdd;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    padding: 5px 0;
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Imagen */
+img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Enlace "Volver atrás" */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+}

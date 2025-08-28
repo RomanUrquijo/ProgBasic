@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/formulario.png" type="image/png">
+    <link rel="stylesheet" href="../css/styleformulario.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <section>
+        <h1>Formulario de contacto</h1>
+
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje</label><br>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="41" required></textarea><br><br>
+
+            <label for="genero">Genero</label><br>
+            <select name="genero" id="genero">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">acepto los terminos y condiciones</label><br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+     <a href="../index.html">Volver atrás</a>
+
+
+</body>
+</html>
