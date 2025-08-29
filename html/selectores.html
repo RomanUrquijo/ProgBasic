@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleselectores.css">
+    <title>SELECTORES</title>
+</head>
+<body>
+
+    <!-- cabecera -->
+     <header>
+        <h1>SELECTORES CSS</h1>
+        <P>Estoy aprendiendo a usar los selectores en CSS</P>
+     </header>
+
+     <!-- contenido -->
+      <main>
+        <section>
+            <h2>¿Qué son los selectores CSS?</h2>
+            <p>Los <strong>selectores CSS</strong> son patrones que se usan para elegir qué elementos HTML 
+        recibirán un estilo. Permiten aplicar colores, tamaños, márgenes y más a elementos específicos 
+        dentro de la página.</p>
+        </section>
+
+        <section>
+            <h2>Tabla de selectores CSS más usados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>SELECTOR</th>
+            <th>DESCRIPCIÓN</th>
+            <th>EJEMPLO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>*</code></td>
+            <td>Selector universal: aplica a todos los elementos del documento.</td>
+            <td><code>* { margin: 0; padding: 0; }</code></td>
+          </tr>
+          <tr>
+            <td><code>p</code></td>
+            <td>Selector de tipo: aplica a todos los elementos de esa etiqueta.</td>
+            <td><code>p { color: blue; }</code></td>
+          </tr>
+          <tr>
+            <td><code>.clase</code></td>
+            <td>Selector de clase: aplica a todos los elementos con esa clase.</td>
+            <td><code>.titulo { font-size: 20px; }</code></td>
+          </tr>
+          <tr>
+            <td><code>#id</code></td>
+            <td>Selector de ID: aplica a un único elemento con ese identificador.</td>
+            <td><code>#principal { background: yellow; }</code></td>
+          </tr>
+          <tr>
+            <td><code>elemento elemento</code></td>
+            <td>Selector de descendencia: aplica a los elementos dentro de otro.</td>
+            <td><code>main p { color: green; }</code></td>
+          </tr>
+          <tr>
+            <td><code>div &gt; p</code></td>
+            <td>Selector de hijo directo: afecta solo a los hijos inmediatos.</td>
+            <td><code>div &gt; p { font-weight: bold; }</code></td>
+          </tr>
+          <tr>
+            <td><code>h1 + p</code></td>
+            <td>Selector de hermano adyacente: afecta al primer elemento que sigue.</td>
+            <td><code>h1 + p { color: gray; }</code></td>
+          </tr>
+          <tr>
+            <td><code>h1 ~ p</code></td>
+            <td>Selector de hermanos generales: aplica a todos los hermanos siguientes.</td>
+            <td><code>h1 ~ p { font-style: italic; }</code></td>
+          </tr>
+          <tr>
+            <td><code>[atributo]</code></td>
+            <td>Selector de atributo: aplica a elementos con un atributo específico.</td>
+            <td><code>input[type="text"] { border: 1px solid blue; }</code></td>
+          </tr>
+          <tr>
+            <td><code>:hover</code></td>
+            <td>Pseudo-clase: se aplica cuando el usuario pasa el ratón por encima.</td>
+            <td><code>a:hover { color: red; }</code></td>
+          </tr>
+          <tr>
+            <td><code>:first-child</code></td>
+            <td>Selecciona el primer hijo de un contenedor.</td>
+            <td><code>p:first-child { font-weight: bold; }</code></td>
+          </tr>
+          <tr>
+            <td><code>:last-child</code></td>
+            <td>Selecciona el último hijo de un contenedor.</td>
+            <td><code>p:last-child { color: purple; }</code></td>
+          </tr>
+          <tr>
+            <td><code>:nth-child(n)</code></td>
+            <td>Selecciona un hijo en la posición indicada.</td>
+            <td><code>li:nth-child(2) { color: orange; }</code></td>
+          </tr>
+          <tr>
+            <td><code>::before</code></td>
+            <td>Pseudo-elemento: agrega contenido antes del elemento.</td>
+            <td><code>h1::before { content: "★ "; }</code></td>
+          </tr>
+          <tr>
+            <td><code>::after</code></td>
+            <td>Pseudo-elemento: agrega contenido después del elemento.</td>
+            <td><code>h1::after { content: " ✔"; }</code></td>
+          </tr>
+        </tbody>
+        </table>
+        </section>
+         
+      </main>
+      <a href="../index.html">Volver atrás</a>
+</html>

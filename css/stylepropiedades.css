@@ -1,0 +1,135 @@
+/* reset basico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* fondo general */
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    animation: gradientMove 10s infinite alternate;
+}
+
+/* animacion del fondo */
+@keyframes gradientMove{
+    0% { background: linear-gradient(135 deg, #74ebd5, #9face6);}
+    100% { background: linear-gradient(135deg, #9face6, #74ebd5);}
+}
+
+/* contenido principal */
+main{
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1000px;
+    animation: fadeIn 1s ease;
+}
+/* animacion de entrada */
+@keyframes fadeIn{
+from {opacity: 0; transform: translateY(20px);}
+to {opacity: 1; transform: translateY(0);}
+}
+
+/* cabecera */
+header{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+font-size: 2.2rem;
+color: #333;
+margin-bottom: 10px;
+}
+header p{
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* secciones */
+section{
+    margin-bottom: 30px;
+}
+h2{
+    font-size: 1.5rem;
+    color: #556cd6;
+    margin-bottom: 15px;
+    border-left: 5px solid #556cd6;
+    padding-left: 10px;
+}
+/* tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+thead{
+    background: #556cd6;
+    color: white;
+}
+thead th{
+    padding: 12px;
+    text-align: left;
+}
+tbody tr{
+    background: #fff;
+    transition: background 0.3s, transform 0.2s;
+}
+tbody tr:nth-child(even){
+    background: #f9f9f9;
+}
+tbody tr:hover {
+    background: #e8ecff;
+    transform: scale(1.01);
+
+}
+td{
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+td code{
+    background: #f4f4f4;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #d63384;
+}
+/* animacion suave en hover  */
+.alinear_texto {
+    transition: color 0.3s ease;
+}
+.alinear_texto:hover {
+    color: #3f51b5;
+}
+
+/* Enlace volver atrás */
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    padding: 3px 6px;
+     display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #556cd6;
+}
