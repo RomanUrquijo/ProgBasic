@@ -1,0 +1,54 @@
+/* selector universal(*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #faebd7;
+
+}
+
+/* selector de etiqueta */
+h1 {
+    text-align: center;
+    color: #00008b;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+/* selector de id  */
+p#color_p {
+    background-color: #ffff00;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid #ffa500;
+
+}
+
+p.color_p {
+    color: #dc143c;
+    font-style: italic;
+    background: #ffd;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+
+div#menu_nav > ul#opciones > li{
+    background-color:#000;
+    color: #fff;
+}
+
+div#menu_nav > ul#opciones > li:hover{
+    background-color:#fff;
+    color: #000;
+}
