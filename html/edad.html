@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/edad.css">
+    <title>calculadora de edad</title>
+
+</head>
+<body>
+    <div class="wrap">
+    <header class="header">
+      <h1>Calculadora de edad</h1>
+      <p class="lead">Introduce tu fecha de nacimiento y obtén la edad en años, meses y días.</p>
+    </header>
+
+    <main class="card" role="main">
+      <label for="birth">Fecha de nacimiento</label>
+      <input id="birth" type="date" />
+
+      <div class="option-row">
+        <label class="small">
+          <input id="feb29" type="checkbox" checked />
+          Tratar 29 de febrero como 28/02 en años no bisiestos
+        </label>
+      </div>
+
+      <div class="btn-row">
+        <button id="calc" class="btn">Calcular</button>
+        <button id="reset" class="btn ghost">Limpiar</button>
+      </div>
+
+      <div id="result" class="result" aria-live="polite"></div>
+      <div id="debug" class="debug" aria-hidden="true"></div>
+    </main>
+
+    <footer class="footer">
+      <small>Hecho con JavaScript — sin librerías externas</small>
+    </footer>
+  </div>
+
+  <script defer src="../js/edad.js"></script>
+    
+</body>
+</html>
