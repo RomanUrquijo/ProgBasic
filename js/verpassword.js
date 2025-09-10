@@ -14,3 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// otra manera de hacerlo
+// toggle_password.addEventListener("click", () => {
+//     const type = password.type === "pasword" ? "text" : "password";
+//     password.type = type;
+//     toggle_password.classList.remove("fa-eye");
+//       toggle_password.classList.add("fa-eye-slash");
+// });
