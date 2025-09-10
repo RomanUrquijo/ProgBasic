@@ -106,3 +106,16 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #bb0a0a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #556cd6;
+}
