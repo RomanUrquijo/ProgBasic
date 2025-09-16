@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/form_estudiantes.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Formulario de Contacto</title>
+
+</head>
+<body>
+  <section>
+    <h2>Información de contacto</h2>
+
+    <!-- Inicio del formulario -->
+    <form action="#" method="post">
+
+      <div>
+        <label for="name">
+          <span>Nombre</span>
+          <strong class="required">*</strong>
+        </label>
+        <input type="text" id="name" name="username" placeholder="Ingrese Nombre" required />
+      </div>
+
+      <div>
+        <label for="apellido">
+          <span>Apellido</span>
+          <strong class="required">*</strong>
+        </label>
+        <input type="text" id="apellido" name="userlastname" placeholder="Ingrese Apellido" required />
+      </div>
+
+      <div>
+        <label for="mail">
+          <span>Correo electrónico</span>
+          <strong class="required">*</strong>
+        </label>
+        <input type="email" id="mail" name="usermail" placeholder="Ingrese su correo" required />
+      </div>
+
+      <div>
+        <label for="lang">
+          <span>Documento</span>
+          <strong class="required">*</strong>
+        </label>
+        <select name="documento" id="lang" required>
+          <option value="">Seleccione</option>
+          <option value="cc">C.C</option>
+          <option value="ti">T.I</option>
+          <option value="ce">C.E</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="document">
+          <span>Número de documento</span>
+          <strong class="required">*</strong>
+        </label>
+        <input type="text" id="document" name="numero_documento" placeholder="Ingrese su documento" required maxlength="10" />
+      </div>
+
+      <div>
+        <label for="fecha_nac">
+          <span>Fecha de nacimiento</span>
+          <strong class="required">*</strong>
+        </label>
+        <input type="date" id="fecha_nac" name="fecha_nac" required>
+      </div>
+
+      <div>
+        <label for="telefono">
+          <span>Número de Teléfono</span>
+          <strong class="required">*</strong>
+        </label>
+        <input type="number" id="telefono" name="telefono" placeholder="Ingrese su Teléfono" required />
+        <span class="error" id="telefonoError"></span>
+    </div>
+
+    <div>
+      <label class="genero-label"><strong>Género</strong> <strong class="required">*</strong></label>
+      <div class="genero-opciones">
+        <label for="title_1"><input type="radio" id="title_1" name="genero" value="M" required /> <strong>Masculino</strong></label>
+        <label for="title_2"><input type="radio" id="title_2" name="genero" value="F" required /> <strong>Femenino</strong></label>
+        <label for="title_3"><input type="radio" id="title_3" name="genero" value="I" required /> <strong>Indefinido</strong></label>
+      </div>
+    </div>
+
+<div class="password-container">
+  <label for="pwd1">
+    <span>Contraseña</span>
+    <strong class="required">*</strong>
+  </label>
+  <div class="input-emoji">
+    <input type="password" id="pwd1" name="password" placeholder="Ingrese su contraseña" required />
+    <span class="toggle-pass" id="togglePwd1" title="Mostrar/Ocultar contraseña">🙈</span>
+  
+</div>
+<ul id="pwdRequirements">
+    <li id="minLength">Mínimo 10 caracteres</li>
+    <li id="upperCase">Al menos una mayúscula</li>
+    <li id="lowerCase">Al menos una minúscula</li>
+    <li id="number">Al menos un número</li>
+    <li id="specialChar">Al menos un carácter especial</li>
+  </ul>
+</div>
+
+<div class="password-container">
+  <label for="pwd2">
+    <span>Repetir contraseña</span>
+    <strong class="required">*</strong>
+  </label>
+  <div class="input-emoji">
+    <input type="password" id="pwd2" name="confirm_password" placeholder="Confirme su contraseña" required />
+    <span class="toggle-pass" id="togglePwd2" title="Mostrar/Ocultar contraseña">🙈</span>
+  </div>
+</div>
+
+      <!-- Botón de enviar -->
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+
+    </form>
+    <!-- Fin del formulario -->
+
+  </section>
+
+  <!-- Enlace al JS -->
+  <script src="../js/form_estudiantes.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/*==============================
+  FUENTE Y FONDO DE LA PÁGINA
+==============================*/
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 🎨 Degradado de fondo */
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/*==============================
+  CONTENEDOR DEL FORMULARIO
+==============================*/
+section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+/*==============================
+  TÍTULOS
+==============================*/
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/*==============================
+  LABELS
+==============================*/
+label span, .genero-label, .genero-opciones label strong {
+  font-weight: bold; /* Negrita en todos los labels y opciones de género */
+}
+
+/*==============================
+  INPUTS, SELECT Y BOTÓN
+==============================*/
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 6px rgba(106,17,203,0.4);
+}
+
+/*==============================
+  BOTÓN ENVIAR
+==============================*/
+button {
+  background: #6a11cb;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #4a0fa6;
+}
+
+/*==============================
+  GÉNERO HORIZONTAL
+==============================*/
+.genero-opciones {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/*==============================
+  VALIDACIONES EN TIEMPO REAL
+==============================*/
+input.error, #mail.error, #document.error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+input.valid, #mail.valid, #document.valid {
+  border: 2px solid green;
+  background-color: #e6ffe6;
+}
+
+/* Asterisco obligatorio */
+.required {
+  color: red;
+}
+
+/* Mensajes de error (opcional si quieres mostrarlos) */
+.error {
+  color: red;
+  font-size: 0.85em;
+  margin-left: 5px;
+}
+
+/*==============================
+  CONTRASEÑAS Y EMOJI
+==============================*/
+.password-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-emoji {
+  position: relative;
+}
+
+.input-emoji input {
+  width: 100%;
+  padding-right: 40px; /* espacio para el emoji */
+  height: 40px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-emoji .toggle-pass {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.4em;
+  user-select: none;
+}
+
+/*==============================
+  REQUISITOS DE CONTRASEÑA
+==============================*/
+#pwdRequirements {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.85em;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#pwdRequirements li {
+  color: red; /* Por defecto no cumplido */
+}
+
+#pwdRequirements li.valid {
+  color: green; /* Cuando se cumple */
+}
+
